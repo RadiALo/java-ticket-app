@@ -1,10 +1,9 @@
 package ticketapp.dto.request;
 
+import javax.validation.constraints.Size;
 import lombok.Data;
 import ticketapp.lib.Email;
 import ticketapp.lib.FieldsValueMatch;
-
-import javax.validation.constraints.Size;
 
 @Data
 @FieldsValueMatch(

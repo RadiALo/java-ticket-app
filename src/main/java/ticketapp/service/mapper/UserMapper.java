@@ -5,7 +5,7 @@ import ticketapp.dto.response.UserResponseDto;
 import ticketapp.model.User;
 
 @Component
-public class UserMapper implements ResponseDtoMapper<UserResponseDto, User>  {
+public class UserMapper implements ResponseDtoMapper<UserResponseDto, User> {
     @Override
     public UserResponseDto mapToDto(User user) {
         UserResponseDto responseDto = new UserResponseDto();

@@ -1,13 +1,13 @@
 package ticketapp.service.impl;
 
+import java.util.Set;
+import org.springframework.stereotype.Service;
 import ticketapp.model.Role;
 import ticketapp.model.User;
 import ticketapp.service.AuthenticationService;
 import ticketapp.service.RoleService;
 import ticketapp.service.ShoppingCartService;
 import ticketapp.service.UserService;
-import java.util.Set;
-import org.springframework.stereotype.Service;
 
 @Service
 public class AuthenticationServiceImpl implements AuthenticationService {

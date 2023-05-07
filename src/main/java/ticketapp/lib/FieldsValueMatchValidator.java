@@ -4,7 +4,6 @@ import java.util.Objects;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 import org.springframework.beans.BeanWrapperImpl;
-import ticketapp.lib.FieldsValueMatch;
 
 public class FieldsValueMatchValidator
         implements ConstraintValidator<FieldsValueMatch, Object> {

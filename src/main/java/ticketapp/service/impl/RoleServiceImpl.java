@@ -1,7 +1,6 @@
 package ticketapp.service.impl;
 
 import java.util.NoSuchElementException;
-
 import org.springframework.stereotype.Service;
 import ticketapp.model.Role;
 import ticketapp.repository.RoleRepository;

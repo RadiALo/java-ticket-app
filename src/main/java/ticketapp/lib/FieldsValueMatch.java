@@ -1,7 +1,5 @@
 package ticketapp.lib;
 
-import ticketapp.lib.FieldsValueMatchValidator;
-
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

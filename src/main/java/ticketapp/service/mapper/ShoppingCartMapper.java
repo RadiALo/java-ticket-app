@@ -7,7 +7,7 @@ import ticketapp.model.Ticket;
 
 @Component
 public class ShoppingCartMapper implements
-    ResponseDtoMapper<ShoppingCartResponseDto, ShoppingCart> {
+        ResponseDtoMapper<ShoppingCartResponseDto, ShoppingCart> {
     @Override
     public ShoppingCartResponseDto mapToDto(ShoppingCart shoppingCart) {
         ShoppingCartResponseDto responseDto = new ShoppingCartResponseDto();

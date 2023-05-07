@@ -2,14 +2,14 @@ package ticketapp.security;
 
 import static org.springframework.security.core.userdetails.User.withUsername;
 
-import ticketapp.model.User;
-import ticketapp.service.UserService;
 import java.util.Optional;
 import org.springframework.security.core.userdetails.User.UserBuilder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import ticketapp.model.User;
+import ticketapp.service.UserService;
 
 @Service
 public class CustomUserDetailService implements UserDetailsService {
