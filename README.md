@@ -56,3 +56,11 @@ There are all endpoints:
   - Core
   - Web Mvc
   - Security
+  
+  ## How to start
+  
+  - Download Tomcat and MySQL
+  - Configure db.properties file
+  - Build and start project
+  
+  Then you can register new user or login as an existing administrator with username ```admin@i.ua``` and password ```admin123```.
