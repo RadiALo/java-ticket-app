@@ -1,5 +1,6 @@
 package ticketapp.service.impl;
 
+import org.springframework.stereotype.Service;
 import ticketapp.model.MovieSession;
 import ticketapp.model.ShoppingCart;
 import ticketapp.model.Ticket;
@@ -8,6 +9,7 @@ import ticketapp.repository.ShoppingCartRepository;
 import ticketapp.repository.TicketRepository;
 import ticketapp.service.ShoppingCartService;
 
+@Service
 public class ShoppingCartServiceImpl implements ShoppingCartService {
     private final ShoppingCartRepository shoppingCartRepository;
     private final TicketRepository ticketRepository;

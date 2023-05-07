@@ -2,10 +2,13 @@ package ticketapp.service.impl;
 
 import java.util.NoSuchElementException;
 import java.util.Optional;
+
+import org.springframework.stereotype.Service;
 import ticketapp.model.User;
 import ticketapp.repository.UserRepository;
 import ticketapp.service.UserService;
 
+@Service
 public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
 
