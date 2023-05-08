@@ -1,7 +1,8 @@
 # Ticket App
 ## Description
 
-There you can see little Cinema API that allows you to manage simple cinema model. You can create movies and cinema halls, open new movie sessions and make orders.
+There you can see a little Cinema API that allows you to manage simple cinema models.
+You can create movies and cinema halls, open new movie sessions and make orders.
 
 ## Features
 
@@ -14,11 +15,25 @@ As User:
 - View oreder history
 
 As Admin:
+- Find movies and cinema halls
+- Find available movie sessions
 - Create movies and cinema halls
 - Open new movie sessions
 - Find user info by email
 
 ## Structure
+
+Project contains 7 models:
+- User
+- ShoppingCart
+- Movie
+- CinemaHall
+- MovieSession
+- Ticket
+- Order
+
+Each model has own repository to access from db and service for buisness logic.
+
 
 There are all endpoints:
 - Authentication:
@@ -57,10 +72,11 @@ There are all endpoints:
   - Web Mvc
   - Security
   
-  ## How to start
+## How to start
   
-  - Download Tomcat and MySQL
-  - Configure db.properties file
-  - Build and start project
-  
-  Then you can register new user or login as an existing administrator with username ```admin@i.ua``` and password ```admin123```.
+- Change values YOUR_DRIVER, YOURDATABASE_URL, YOUR_USERNAME, YOUR_PASSWORD on yours at the db.properties file.
+- Build and start project
+- Then you can register new user or login as an existing administrator with username ```admin@i.ua``` and password ```admin123```:
+  - Send ```POST /register``` requests with parameters: ```login```, ```password``` and ```comfirmPassword``` to register new user.
+  - Send ```POST /login``` requests with your or built-in ```username``` and ```password``` to get access to any endpoint.
+- Send any http requests to endpoints from Structure part.
