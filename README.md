@@ -12,7 +12,7 @@ As User:
 - Add tickets to shopping cart
 - View shopping cart
 - Make an order
-- View oreder history
+- View order history
 
 As Admin:
 - Find movies and cinema halls
