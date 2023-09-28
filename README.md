@@ -9,7 +9,7 @@ You can create movies and cinema halls, open new movie sessions and make orders.
 As User:
 - Find movies and cinema halls
 - Find available movie sessions
-- Add tickets to shopping cart
+- Add tickets to the shopping cart
 - View shopping cart
 - Make an order
 - View order history
@@ -23,7 +23,7 @@ As Admin:
 
 ## Structure
 
-Project contains 7 models:
+The project contains 7 models:
 - User
 - ShoppingCart
 - Movie
@@ -32,8 +32,7 @@ Project contains 7 models:
 - Ticket
 - Order
 
-Each model has own repository to access from db and service for buisness logic.
-
+Each model has its own repository to access from the DB and service for business logic.
 
 There are all endpoints:
 - Authentication:
@@ -52,10 +51,10 @@ There are all endpoints:
   - PUT /movie-sessions/${id}/ - update movie session
   - DELETE /movie-sessions/${id} - delete movie session
 - Shopping Cart:
-  - GET /shopping-carts/by-user/ - show all tickets added to user's shopping cart
+  - GET /shopping-carts/by-user/ - show all tickets added to the user's shopping cart
   - PUT /shopping-carts/movie-sessions/ - update shopping cart
 - Order:
-  - GET /orders/ - show user's order history
+  - GET /orders/ - show the user's order history
   - POST /orders/complete - complete order
 - User:
   - GET /users/by-email/ - show user's information by email
@@ -64,7 +63,7 @@ There are all endpoints:
 
 - Java 17
 - Apache Maven
-- Apache Tomcat - version 9.X.X
+- Apache Tomcat
 - MySQL
 - Hibernate
 - Spring:
